@@ -6,14 +6,14 @@
      function calculateDistance()
      {
          var lg1=Number(document.getElementById("lg1").value);
+         var lt2=Number(document.getElementById("lt2").value);
          var lg2=Number(document.getElementById("lg2").value);
          var lt1=Number(document.getElementById("lt1").value);
-         var lt2=Number(document.getElementById("lt2").value);
 
-         lg1 = (lg1 * Math.PI) / 180;
          lg2 = (lg2 * Math.PI) / 180;
          lt1 = (lt1 * Math.PI) / 180;
          lt2 = (lt2 * Math.PI) / 180;
+         lg1 = (lg1 * Math.PI) / 180;
          dislg = lg2 - lg1;
          dislt = lt2 - lt1;
          a = Math.pow(Math.sin(dislt / 2), 2) + Math.cos(lt1) * Math.cos(lt2) * Math.pow(Math.sin(dislg / 2), 2);
