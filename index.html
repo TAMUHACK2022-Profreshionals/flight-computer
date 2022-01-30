@@ -2,6 +2,16 @@
 <html>
   <body>
     <script>
+      
+      function apicall(airport)
+        fetch('https://aa-flight-flight-engine.herokuapp.com/airports?code='+airport)
+        .then(response => response.json())
+        .then(data => {
+          console.log(data) // Prints result from `response.json()` in getRequest
+        })
+        .catch(error => console.error(error))
+
+
       function dis(lt_1, lt_2, lg_1, lg_2) {
         lg_1 = (lg_1 * Math.PI) / 180;
         lg_2 = (lg_2 * Math.PI) / 180;
