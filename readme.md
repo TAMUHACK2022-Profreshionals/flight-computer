@@ -10,7 +10,7 @@ Thank you for viewing my team's project!<br/>
 About Us
 --
 
-Christopher Merkle '22, Technology Management TAMU<br/>
+Christopher Merkle '22, Technology Management, TAMU<br/>
 <img src="img/IMG_9208.jpg" width="144" height="144"><br/>
 Lance Merkle '22, Industrial Distribution, TAMU<br/>
 <img src="img/IMG_9206.jpg" width="144" height="144"><br/>
