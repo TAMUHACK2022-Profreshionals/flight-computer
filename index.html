@@ -3,11 +3,12 @@
   <body>
     <script>
       
+      airport = "DFW"
       function apicall(airport)
         fetch('https://aa-flight-flight-engine.herokuapp.com/airports?code='+airport)
         .then(response => response.json())
         .then(data => {
-          console.log(data) // Prints result from `response.json()` in getRequest
+          document.write(data); // Prints result from `response.json()` in getRequest
         })
         .catch(error => console.error(error))
 
