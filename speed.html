@@ -1,0 +1,40 @@
+<html>
+  <head>
+       <title>Online Flight Computer</title>
+       <link rel="stylesheet" href="">
+ <script type="text/javascript">
+     function calculateSpeed()
+     {
+         var alt=Number(document.getElementById("alt").value);
+         var ias=Number(document.getElementById("ias").value);
+        if(alt > 3000) {
+            var output=((((alt - 3000)/1000)*3)+ias);
+        }
+        else {
+            var output=ias
+        }
+
+         document.getElementById("output").innerText= output;
+     }
+ </script>
+  </head>
+  <body>
+      <header>
+       <div class="container">
+         <h1 class="logo">Online Flight Computer</h1>
+         <strong><nav>
+           <ul class="menu">
+             <li><a href="./index.html">Home</a></li>
+             <li><a href="./distance.html">Distance Between Airports Calculator</a></li>
+             <li><a href="./burn.html">Fuel Burn Calculator</a></li>
+           </ul>
+         </nav></strong>
+       </div>
+     </header>
+     <div class="container">
+ <h1>Fuel Burn Calculator</h1>
+ <p>KIAS: <input type="text" id="ias"/>
+ <p>Altitude (feet): <input type="text" id="alt"/>
+ </p>
+ <input type="submit" value="Submit" onclick="calculateSpeed();">
+ <h1>KTAS: <span id="output"></span></h1>

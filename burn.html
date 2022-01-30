@@ -17,14 +17,20 @@
   <body>
       <header>
        <div class="container">
-         <h1 class="logo">Online Flight Computer</h1>
+         <h1 class="logo">Online E6B Flight Computer</h1>
          <strong><nav>
            <ul class="menu">
+             <li><a href="./index.html">Home</a></li>
              <li><a href="">Distance Between Airports</a></li>
              <li><a href="">Speed Calculator</a></li>
-             <li><a href="./burn.html">Fuel Burn Calculator</a></li>             
            </ul>
          </nav></strong>
        </div>
      </header>
      <div class="container">
+ <h1>Fuel Burn Calculator</h1>
+ <p>Time elapsed (hr): <input type="text" id="qty"/>
+ <p>Rate of fuel burn (gal/hr): <input type="text" id="rate"/>
+ </p>
+ <input type="submit" value="Submit" onclick="calculateFuel();">
+ <h1>Fuel needed is (gal): <span id="output"></span></h1>

@@ -1,0 +1,50 @@
+<html>
+  <head>
+       <title>Online Flight Computer</title>
+       <link rel="stylesheet" href="">
+ <script type="text/javascript">
+     function calculateDistance()
+     {
+         var lg1=Number(document.getElementById("lg1").value);
+         var lg2=Number(document.getElementById("lg2").value);
+         var lt1=Number(document.getElementById("lt1").value);
+         var lt2=Number(document.getElementById("lt2").value);
+
+         lg1 = (lg1 * Math.PI) / 180;
+         lg2 = (lg2 * Math.PI) / 180;
+         lt1 = (lt1 * Math.PI) / 180;
+         lt2 = (lt2 * Math.PI) / 180;
+         dislg = lg2 - lg1;
+         dislt = lt2 - lt1;
+         a = Math.pow(Math.sin(dislt / 2), 2) + Math.cos(lt1) * Math.cos(lt2) * Math.pow(Math.sin(dislg / 2), 2);
+         c = 2 * Math.asin(Math.sqrt(a));
+         r = 3956;
+        
+         var output=(c * r);
+ 
+         document.getElementById("output").innerText= output;
+     }
+ </script>
+  </head>
+  <body>
+      <header>
+       <div class="container">
+         <h1 class="logo">Distance Between Airports</h1>
+         <strong><nav>
+           <ul class="menu">
+             <li><a href="./index.html">Home</a></li>
+             <li><a href="./speed.html">True Air Speed Calculator</a></li>
+             <li><a href="./burn.html">Fuel Burn Calculator</a></li>
+           </ul>
+         </nav></strong>
+       </div>
+     </header>
+     <div class="container">
+ <h1>Fuel Burn Calculator</h1>
+ <p>Latitude of origin: <input type="text" id="lg1"/>
+ <p>Longitude of origin: <input type="text" id="lt1"/>
+ <p>Latitude of destination: <input type="text" id="lg2"/>
+ <p>Longitude of destination: <input type="text" id="lt2"/>
+ </p>
+ <input type="submit" value="Submit" onclick="calculateDistance();">
+ <h1>Distance is: <span id="output"></span></h1>
