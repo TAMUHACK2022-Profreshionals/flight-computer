@@ -1,18 +1,26 @@
+[link to our page](URL "https://tamuhack-2022.github.io/flight-computer/")
+
 TAMUHack 2022, Team Name: The Profreshionals
 --
 
 Howdy!
 
-Thank you for viewing my team's project!
+Thank you for viewing my team's project!<br/>
 
 About Us
 --
-Christopher Merkle '22, Technology Management TAMU
-Lance Merkle '22, Industrial Distribution, TAMU
-Brayden Stewart '24, Petroleum Engineering, TAMU
+Christopher Merkle '22, Technology Management TAMU <br/>
+Lance Merkle '22, Industrial Distribution, TAMU <br/>
+Brayden Stewart '24, Petroleum Engineering, TAMU <br/>
 
-We're all new to hackathons, so we're really just here to see what they're all about!
+We're all new to hackathons, so we're really just here to see what they're all about!<br/>
 
-About our project
+About our project: Online Flight Computer
 --
-We decided to make something simple to use this as an opportunity to start learning JavaScript.
+Since this was our first hackathon, we decided to make something simple and use this as an opportunity to start learning JavaScript.<br/>
+<br/>
+We started out trying to think of ideas for the American Airlines challenge and we came to the conclusion that while we were at it, we should make something that's useful for our own purposes too.</br>
+All of our team members love aviaiton, either in real life, or in simulation so we decided to make a web app for preflight calculations that could easily be expanded later on.
+
+When pilots are preparing for flight, there are a few calculations they have to make and we thought it would be helpful to make a web app that would perform those calculations for them. 
+
