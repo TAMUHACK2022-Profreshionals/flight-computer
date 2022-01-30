@@ -22,5 +22,5 @@ Since this was our first hackathon, we decided to make something simple and use 
 We started out trying to think of ideas for the American Airlines challenge and we came to the conclusion that while we were at it, we should make something that's useful for our own purposes too.<br/>
 
 All of our team members love aviaiton, either in real life, or in simulation so we decided to make a web app for preflight calculations that could easily be expanded later on.<br/>
-When pilots are preparing for flight, there are a few calculations they have to make and we thought it would be helpful to make a web app that would perform those calculations for them. 
 
+When pilots are preparing for flight, there are a few calculations they have to make and we thought it would be helpful to make a web app that would perform those calculations for them. 
