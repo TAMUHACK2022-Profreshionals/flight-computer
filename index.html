@@ -1,33 +1,38 @@
-<!DOCTYPE html>
 <html>
+  <head>
+       <title>Online Flight Computer</title>
+       <link rel="stylesheet" href="">
+ <script type="text/javascript">
+     function calculateFuel()
+     {
+         var rate=Number(document.getElementById("rate").value);
+         var qty=Number(document.getElementById("qty").value);
+ 
+         var output=(qty * rate);
+ 
+         document.getElementById("output").innerText= output;
+ 
+ 
+     }
+ </script>
+  </head>
   <body>
-    <script>
-      airport = 'BWI'
-      fetch('https://aa-flight-flight-engine.herokuapp.com/airports?code='+airport)
-      .then(response => response.json())
-      .then(data => {
-        console.log(data) // Prints result from `response.json()` in getRequest
-      })
-      .catch(error => console.error(error))
-
-
-      function dis(lt_1, lt_2, lg_1, lg_2) {
-        lg_1 = (lg_1 * Math.PI) / 180;
-        lg_2 = (lg_2 * Math.PI) / 180;
-        lt_1 = (lt_1 * Math.PI) / 180;
-        lt_2 = (lt_2 * Math.PI) / 180;
-        dislg = lg_2 - lg_1;
-        dislt = lt_2 - lt_1;
-        a = Math.pow(Math.sin(dislt / 2), 2) + Math.cos(lt_1) * Math.cos(lt_2) * Math.pow(Math.sin(dislg / 2), 2);
-        c = 2 * Math.asin(Math.sqrt(a));
-        r = 3956;
-        return c * r;
-      }
-      lt_1 = 1;
-      lt_2 = 5;
-      lg_1 = -1.7297222222222221;
-      lg_2 = -1.6997222222222223;
-      document.write(Math.round(dis(lt_1, lt_2, lg_1, lg_2)));
-    </script>
-  </body>
-</html>
+      <header>
+       <div class="container">
+         <h1 class="logo">Online E6B Flight Computer</h1>
+         <strong><nav>
+           <ul class="menu">
+             <li><a href="">Distance Between Airports</a></li>
+             <li><a href="">Speed Calculator</a></li>
+           </ul>
+         </nav></strong>
+       </div>
+     </header>
+     <div class="container">
+ <h1>Fuel Burn Calculator</h1>
+ <p>Time elapsed (hr): <input type="text" id="qty"/>
+ <p>Rate of fuel burn (gal/hr): <input type="text" id="rate"/>
+ 
+ </p>
+ <input type="submit" value="Submit" onclick="calculateFuel();">
+ <h1>Fuel needed is (gal): <span id="output">?</span></h1>
