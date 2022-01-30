@@ -1,4 +1,4 @@
-[link to our page](URL "https://tamuhack-2022.github.io/flight-computer/")
+[link to our page](URL "https://tamuhack-2022.github.io/flight-computer/index.html")
 
 TAMUHack 2022, Team Name: The Profreshionals
 --
