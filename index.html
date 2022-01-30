@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function dis(lt_1, lt_2, lg_1, lg_2) {
+        lg_1 = (lg_1 * Math.PI) / 180;
+        lg_2 = (lg_2 * Math.PI) / 180;
+        lt_1 = (lt_1 * Math.PI) / 180;
+        lt_2 = (lt_2 * Math.PI) / 180;
+        dislg = lg_2 - lg_1;
+        dislt = lt_2 - lt_1;
+        a = Math.pow(Math.sin(dislt / 2), 2) + Math.cos(lt_1) * Math.cos(lt_2) * Math.pow(Math.sin(dislg / 2), 2);
+        c = 2 * Math.asin(Math.sqrt(a));
+        r = 3956;
+        return c * r;
+      }
+      lt_1 = 1;
+      lt_2 = 5;
+      lg_1 = -1.7297222222222221;
+      lg_2 = -1.6997222222222223;
+      document.write(Math.round(dis(lt_1, lt_2, lg_1, lg_2)));
+    </script>
+  </body>
+</html>
