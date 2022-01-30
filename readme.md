@@ -9,9 +9,13 @@ Thank you for viewing my team's project!<br/>
 
 About Us
 --
-Christopher Merkle '22, Technology Management TAMU <br/>
-Lance Merkle '22, Industrial Distribution, TAMU <br/>
-Brayden Stewart '24, Petroleum Engineering, TAMU <br/>
+
+Christopher Merkle '22, Technology Management TAMU<br/>
+<img src="img/IMG_9208.jpg" width="144" height="144"><br/>
+Lance Merkle '22, Industrial Distribution, TAMU<br/>
+<img src="img/IMG_9206.jpg" width="144" height="144"><br/>
+Brayden Stewart '24, Petroleum Engineering, TAMU<br/>
+<img src="img/IMG_9207.jpg" width="144" height="144"><br/>
 
 We're all new to hackathons, so we're really just here to see what they're all about!<br/>
 
